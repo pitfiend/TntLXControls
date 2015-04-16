@@ -1,0 +1,38 @@
+package TntLX_Design;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS ON}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'TntWare LX Controls'}
+{$LIBSUFFIX '100'}
+{$DESIGNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  TntUnicodeVcl_Design,
+  TntLX;
+
+contains
+  TntLXForms_Design in '..\..\Design\TntLXForms_Design.pas',
+  TntLXControls_Register in '..\..\Design\TntLXControls_Register.pas';
+
+end.
